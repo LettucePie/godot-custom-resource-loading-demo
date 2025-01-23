@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ttua53tdgacm"]
+
+[ext_resource type="Script" path="res://Scenes/Function/unpacked_loader.gd" id="1_rvjpa"]
+
+[node name="Unpacked_Loader" type="Node"]
+script = ExtResource("1_rvjpa")
+data_dir = "res://Data/Resource-Method"

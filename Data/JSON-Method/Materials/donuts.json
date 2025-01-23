@@ -1,0 +1,17 @@
+{
+	"Donuts": 
+	[
+		{
+			"donut_name": "Cake",
+			"donut_icon": "res://Assets/Icons/third-party/donut_1.png"
+		},
+		{
+			"donut_name": "Chocolate",
+			"donut_icon": "res://Assets/Icons/third-party/donut_2.png"
+		},
+		{
+			"donut_name": "Fudge",
+			"donut_icon": "res://Assets/Icons/third-party/donut_3.png"
+		}
+	]
+}

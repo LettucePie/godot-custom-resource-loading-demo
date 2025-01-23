@@ -1,0 +1,126 @@
+[gd_scene load_steps=10 format=3 uid="uid://dwwlh03c78638"]
+
+[ext_resource type="Texture2D" uid="uid://dkam03dg8f170" path="res://Assets/Icons/third-party/donut_1.png" id="1_1yu7h"]
+[ext_resource type="Script" path="res://Scenes/Play/play.gd" id="1_38mwh"]
+[ext_resource type="Texture2D" uid="uid://dwhieehabbl8l" path="res://Assets/Icons/plus.png" id="2_b650j"]
+[ext_resource type="PackedScene" uid="uid://pscqh1gqpiud" path="res://Scenes/Function/grid_button.tscn" id="2_qljb8"]
+[ext_resource type="Texture2D" uid="uid://dmb37dh70oq5a" path="res://Assets/Icons/unknown.png" id="3_tt7tv"]
+[ext_resource type="Texture2D" uid="uid://dh81ydar1emb2" path="res://Assets/Icons/equals.png" id="3_ult2s"]
+[ext_resource type="PackedScene" uid="uid://csmekiq3kmuwm" path="res://Scenes/Function/json_loader.tscn" id="4_aowcj"]
+[ext_resource type="PackedScene" uid="uid://bbewarxbndpy8" path="res://Scenes/Function/packed_loader.tscn" id="5_iv6j2"]
+[ext_resource type="PackedScene" uid="uid://ttua53tdgacm" path="res://Scenes/Function/unpacked_loader.tscn" id="6_mgkhp"]
+
+[node name="play" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_38mwh")
+grid_button_scene = ExtResource("2_qljb8")
+unknown_tex = ExtResource("3_tt7tv")
+JSON_loader_scene = ExtResource("4_aowcj")
+packed_loader_scene = ExtResource("5_iv6j2")
+unpacked_loader_scene = ExtResource("6_mgkhp")
+
+[node name="column_host" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="c1" type="VBoxContainer" parent="column_host"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.56
+
+[node name="JSON" type="Button" parent="column_host/c1"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Load JSON Method"
+
+[node name="Packed" type="Button" parent="column_host/c1"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Load PackedResource Method"
+
+[node name="Unpacked" type="Button" parent="column_host/c1"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Load UnpackedResource Method"
+
+[node name="c2" type="VBoxContainer" parent="column_host"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Status" type="Label" parent="column_host/c2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Status"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slots" type="HBoxContainer" parent="column_host/c2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotA" type="Button" parent="column_host/c2/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Slot 1"
+icon = ExtResource("1_1yu7h")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="plus" type="TextureRect" parent="column_host/c2/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_b650j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SlotB" type="Button" parent="column_host/c2/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Slot 1"
+icon = ExtResource("1_1yu7h")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="equals" type="TextureRect" parent="column_host/c2/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_ult2s")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Result" type="Button" parent="column_host/c2/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Slot 1"
+icon = ExtResource("1_1yu7h")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="ColorRect" type="ColorRect" parent="column_host/c2"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+color = Color(0.393873, 0.263872, 0.145373, 1)
+
+[node name="GridContainer" type="GridContainer" parent="column_host/c2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.77
+columns = 5
+
+[connection signal="pressed" from="column_host/c1/JSON" to="." method="_on_json_pressed"]
+[connection signal="pressed" from="column_host/c1/Packed" to="." method="_on_packed_pressed"]
+[connection signal="pressed" from="column_host/c1/Unpacked" to="." method="_on_unpacked_pressed"]
+[connection signal="pressed" from="column_host/c2/Slots/SlotA" to="." method="_on_slot_a_pressed"]
+[connection signal="pressed" from="column_host/c2/Slots/SlotB" to="." method="_on_slot_b_pressed"]

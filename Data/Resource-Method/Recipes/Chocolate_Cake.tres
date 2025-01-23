@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RecipeResource" load_steps=4 format=3 uid="uid://0k8edm3ahdkp"]
+
+[ext_resource type="Resource" uid="uid://c0uhxoe5qajc6" path="res://Data/Resource-Method/Materials/Donut_Cake.tres" id="1_6q243"]
+[ext_resource type="Script" path="res://Classes/Recipe.gd" id="1_l0qg1"]
+[ext_resource type="Resource" uid="uid://b8a7hsvrqp70e" path="res://Data/Resource-Method/Materials/Glaze_Chocolate.tres" id="2_afc3d"]
+
+[resource]
+script = ExtResource("1_l0qg1")
+result = "Chocolate Cake Donut"
+required_mats = Array[Resource("res://Classes/Material.gd")]([ExtResource("1_6q243"), ExtResource("2_afc3d")])

@@ -1,0 +1,21 @@
+{
+	"Glazes": 
+	[
+		{
+			"glaze_name": "Strawberry Glaze",
+			"glaze_icon": "res://Assets/Icons/third-party/glazing_1.png"
+		},
+		{
+			"glaze_name": "Sugar Glaze",
+			"glaze_icon": "res://Assets/Icons/third-party/glazing_2.png"
+		},
+		{
+			"glaze_name": "Chocolate Glaze",
+			"glaze_icon": "res://Assets/Icons/third-party/glazing_3.png"
+		},
+		{
+			"glaze_name": "Caramel Glaze",
+			"glaze_icon": "res://Assets/Icons/third-party/glazing_4.png"
+		},
+	]
+}

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MaterialResource" load_steps=3 format=3 uid="uid://c0uhxoe5qajc6"]
+
+[ext_resource type="Script" path="res://Classes/Material.gd" id="1_84ftq"]
+[ext_resource type="Texture2D" uid="uid://dkam03dg8f170" path="res://Assets/Icons/third-party/donut_1.png" id="1_flk0r"]
+
+[resource]
+script = ExtResource("1_84ftq")
+mat_name = "Cake"
+mat_icon = ExtResource("1_flk0r")
+mat_type = 0

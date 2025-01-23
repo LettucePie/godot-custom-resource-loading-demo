@@ -1,0 +1,37 @@
+{
+	"Recipes":
+		[
+			{
+				"result": "Strawberry Cake Donut",
+				"requires":
+					[
+						"Cake",
+						"Strawberry Glaze"
+					]
+			},
+			{
+				"result": "Sugar Cake Donut",
+				"requires":
+					[
+						"Cake",
+						"Sugar Glaze"
+					]
+			},
+			{
+				"result": "Chocolate Cake Donut",
+				"requires":
+					[
+						"Cake",
+						"Chocolate Glaze"
+					]
+			},
+			{
+				"result": "Caramel Cake Donut",
+				"requires":
+					[
+						"Cake",
+						"Caramel Glaze"
+					]
+			},
+		]
+}

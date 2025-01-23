@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://csmekiq3kmuwm"]
+
+[ext_resource type="Script" path="res://Scenes/Function/json_loader.gd" id="1_gpa2c"]
+
+[node name="JSON_Loader" type="Node"]
+script = ExtResource("1_gpa2c")
+data_dir = "res://Data/JSON-Method"

@@ -1,0 +1,20 @@
+[gd_scene load_steps=13 format=3 uid="uid://bbewarxbndpy8"]
+
+[ext_resource type="Script" path="res://Scenes/Function/packed_loader.gd" id="1_ucm3f"]
+[ext_resource type="Resource" uid="uid://c0uhxoe5qajc6" path="res://Data/Resource-Method/Materials/Donut_Cake.tres" id="2_5224h"]
+[ext_resource type="Resource" uid="uid://2j7q6p8jwjcp" path="res://Data/Resource-Method/Materials/Donut_Chocolate.tres" id="3_v2c56"]
+[ext_resource type="Resource" uid="uid://dc4gmxyhhpwow" path="res://Data/Resource-Method/Materials/Donut_Fudge.tres" id="4_3kpbf"]
+[ext_resource type="Resource" uid="uid://5cuewkymuu0w" path="res://Data/Resource-Method/Materials/Glaze_Caramel.tres" id="5_n7qnx"]
+[ext_resource type="Resource" uid="uid://b8a7hsvrqp70e" path="res://Data/Resource-Method/Materials/Glaze_Chocolate.tres" id="6_wpt1w"]
+[ext_resource type="Resource" uid="uid://iqu0eaaswpx4" path="res://Data/Resource-Method/Materials/Glaze_Strawberry.tres" id="7_8rd5q"]
+[ext_resource type="Resource" uid="uid://csduq53x2ewil" path="res://Data/Resource-Method/Materials/Glaze_Sugar.tres" id="8_gm1yk"]
+[ext_resource type="Resource" uid="uid://ctuqe3a6gux70" path="res://Data/Resource-Method/Recipes/Caramel_Cake.tres" id="9_4s6jy"]
+[ext_resource type="Resource" uid="uid://0k8edm3ahdkp" path="res://Data/Resource-Method/Recipes/Chocolate_Cake.tres" id="10_l24k5"]
+[ext_resource type="Resource" uid="uid://t1p1jio0b17j" path="res://Data/Resource-Method/Recipes/Strawberry_Cake.tres" id="11_uo40s"]
+[ext_resource type="Resource" uid="uid://vcivuyhktxjl" path="res://Data/Resource-Method/Recipes/Sugar_Cake.tres" id="12_va40p"]
+
+[node name="Packed_Loader" type="Node"]
+script = ExtResource("1_ucm3f")
+donuts = Array[Resource]([ExtResource("2_5224h"), ExtResource("3_v2c56"), ExtResource("4_3kpbf")])
+glazes = Array[Resource]([ExtResource("5_n7qnx"), ExtResource("6_wpt1w"), ExtResource("7_8rd5q"), ExtResource("8_gm1yk")])
+recipes = Array[Resource]([ExtResource("9_4s6jy"), ExtResource("10_l24k5"), ExtResource("11_uo40s"), ExtResource("12_va40p")])

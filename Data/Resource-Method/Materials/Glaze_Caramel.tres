@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MaterialResource" load_steps=3 format=3 uid="uid://5cuewkymuu0w"]
+
+[ext_resource type="Script" path="res://Classes/Material.gd" id="1_6h6dd"]
+[ext_resource type="Texture2D" uid="uid://pbbkm7txbof2" path="res://Assets/Icons/third-party/glazing_4.png" id="1_atkfn"]
+
+[resource]
+script = ExtResource("1_6h6dd")
+mat_name = "Caramel Glaze"
+mat_icon = ExtResource("1_atkfn")
+mat_type = 1
